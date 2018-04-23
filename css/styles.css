@@ -1,0 +1,50 @@
+.row-header {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.row-content {
+    /*margin: 0 auto;*/
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 500px;
+}
+
+.footer {
+    background-color: black;
+    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+}
+
+h5, address, .copyright {
+    color: white;
+}
+
+.parallax1 {
+    background-image: url("/img/seaHD.jpg");
+    min-height: 960px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+}
+
+.parallax2 {
+    background-image: url("/img/grey2.jpg");
+    min-height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+
+
