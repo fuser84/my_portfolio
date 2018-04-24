@@ -9,6 +9,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Volodymyr Novodid Portfolio</title>
 
@@ -19,6 +21,7 @@
     <script defer src="node_modules/tether/dist/js/tether.min.js"></script>
     <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script defer src="js/my_portfolio.js"></script>
     <!--<script defer src="js/scripts.js"></script>-->
     <!-- endbuild -->
 </head>
@@ -27,17 +30,20 @@
 
 <!--<header>-->
     <div class="container-fluid">
-        <div class="row parallax1 justify-content-center align-items-center">
+        <div id="main" class="row parallax1 justify-content-center align-items-center">
             <div class="col-12 col-sm-12">
                 <h1>Fuser Web Craft</h1>
                 <p>You decide - we create Modern Web Applications!</p>
+                <a href="#" id="about" class="btn btn-circle">
+                    <i class="fa fa-angle-double-down"></i>
+                </a>
             </div>
         </div>
     </div>
 <!--</header>-->
 
 <div class="container-fluid">
-    <div class="row row-content parallax2">
+    <div id="web" class="row row-content parallax2">
         <div class="col-sm-4 order-sm-2 col-md-3 order-md-1 align-self-center">
             <h3>My photo</h3>
         </div>
@@ -50,7 +56,7 @@
     </div>
 
 
-    <div class="row row-content ">
+    <div class="row row-content parallax3">
         <div class="col-sm-4 col-md-3 align-self-center">
             <h3>Portfolio List</h3>
         </div>
@@ -84,15 +90,12 @@
                 </ul>
             </div>
             <div class="col-6 col-sm-5">
-                <h5>Our Address</h5>
-                <address>
-                    Ukraine<br>
-                    Dream City<br>
-                    Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
-                </address>
+                <a href="#" id="up" class="btn btn-circle">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
             </div>
-            <div class="col col-sm-4">
-                <div>
+            <div class="col col-sm-4 align-self-center">
+                <div style="text-align: center">
                     <a href="http://google.com/+">Google+</a>
                     <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
                     <a href="http://www.linkedin.com/in/">LinkedIn</a>
@@ -102,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <div class="row copyright">
+        <div class="row copyright justify-content-center">
             <div class="col-auto">
                 <p>© Copyright 2018 Fuser Web Craft</p>
             </div>

@@ -21,7 +21,7 @@ h5, address, .copyright {
 }
 
 .parallax1 {
-    background-image: url("/img/seaHD.jpg");
+    background-image: url("/img/forest.jpeg");
     min-height: 960px;
 
     /* Create the parallax scrolling effect */
@@ -36,7 +36,7 @@ h5, address, .copyright {
 
 .parallax2 {
     background-image: url("/img/grey2.jpg");
-    min-height: 900px;
+    min-height: 750px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -44,7 +44,35 @@ h5, address, .copyright {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    background-color: darkgrey;
 
 }
 
+.parallax3 {
+    background-image: url("/img/laptop2.jpg");
+    min-height: 750px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border: grey;
+
+}
+.btn-circle {
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    margin-top: 15px;
+    line-height: 45px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100% !important;
+    background: transparent;
+}
 
