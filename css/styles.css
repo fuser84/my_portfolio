@@ -39,7 +39,8 @@ h5, address, .copyright {
     min-height: 750px;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    /*scroll to fixed - to add parallax*/
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,6 +51,20 @@ h5, address, .copyright {
 
 .parallax3 {
     background-image: url("/img/laptop2.jpg");
+    min-height: 750px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border: grey;
+
+}
+
+.parallax4 {
+    background-image: url("/img/waterfall.jpg");
     min-height: 750px;
 
     /* Create the parallax scrolling effect */
