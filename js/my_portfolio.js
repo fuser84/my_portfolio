@@ -13,10 +13,11 @@ class My_Portfolio_Scroll{
     _scroll(event){
         let top = this._el2.offsetTop;
         event.preventDefault();
-            window.scrollTo({
-                top: `${top}`,
-                behavior: "smooth",
-            });
+        this._el2.scrollIntoView({behavior: "smooth", block: "start"});
+            // window.scroll({
+            //     top: `${top}`,
+            //     behavior: "smooth",
+            // });
     }
 }
 
