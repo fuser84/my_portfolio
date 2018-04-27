@@ -57,28 +57,35 @@ let portfolio6 = new My_Portfolio_Scroll({
     el2: document.querySelector('#name')
 });
 
-//workaround in case ES6
-// let navbarCollapse =() => {
-//     let navbar = document.querySelector('#navbar-ex');
-//     if (window.scrollY > 50) {
-//         console.log(window.scrollY);
-//         navbar.classList.add("navbar-shrink");
-//     } else {
-//         navbar.classList.remove("navbar-shrink");
-//     }
-// };
-// window.addEventListener('scroll', navbarCollapse);
-
-
-
-var navbarCollapse = function() {
-    if ($("#navbar-ex").offset().top > 50) {
-        $("#navbar-ex").addClass("navbar-shrink");
+//ES6 approach
+let navbarCollapse =() => {
+    let navbar = document.querySelector('#navbar-ex');
+    if (window.scrollY > 50) {
+        //console.log(window.scrollY);
+        navbar.classList.add("navbar-shrink");
     } else {
-        $("#navbar-ex").removeClass("navbar-shrink");
+        navbar.classList.remove("navbar-shrink");
+        let toggler = document.querySelector(".navbar-toggler");
+        let collapse = document.querySelector(".navbar-collapse");
+        toggler.classList.add("collapsed");
+        toggler.setAttribute('aria-expanded', 'false');
+        collapse.classList.remove("show");
+
     }
 };
+window.addEventListener('scroll', navbarCollapse);
+
+
+//jQuery approach
+
+// var navbarCollapse = function() {
+//     if ($("#navbar-ex").offset().top > 50) {
+//         $("#navbar-ex").addClass("navbar-shrink");
+//     } else {
+//         $("#navbar-ex").removeClass("navbar-shrink");
+//     }
+// };
 // // Collapse now if page is not at top
-navbarCollapse();
+// navbarCollapse();
 // // Collapse the navbar when page is scrolled
-$(window).scroll(navbarCollapse);
+// $(window).scroll(navbarCollapse);
