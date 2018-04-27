@@ -1,3 +1,9 @@
+// $(document).ready(function(){
+//     window.scroll({
+//         top: -1,
+//         behavior: "auto"
+//     });
+// });
 
 
 //add scrollspy behavior to the navbar
@@ -50,3 +56,29 @@ let portfolio6 = new My_Portfolio_Scroll({
     el1: document.querySelector('.navbar-brand'),
     el2: document.querySelector('#name')
 });
+
+//workaround in case ES6
+// let navbarCollapse =() => {
+//     let navbar = document.querySelector('#navbar-ex');
+//     if (window.scrollY > 50) {
+//         console.log(window.scrollY);
+//         navbar.classList.add("navbar-shrink");
+//     } else {
+//         navbar.classList.remove("navbar-shrink");
+//     }
+// };
+// window.addEventListener('scroll', navbarCollapse);
+
+
+
+var navbarCollapse = function() {
+    if ($("#navbar-ex").offset().top > 50) {
+        $("#navbar-ex").addClass("navbar-shrink");
+    } else {
+        $("#navbar-ex").removeClass("navbar-shrink");
+    }
+};
+// // Collapse now if page is not at top
+navbarCollapse();
+// // Collapse the navbar when page is scrolled
+$(window).scroll(navbarCollapse);
