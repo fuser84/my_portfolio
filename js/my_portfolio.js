@@ -1,10 +1,3 @@
-// $(document).ready(function(){
-//     window.scroll({
-//         top: -1,
-//         behavior: "auto"
-//     });
-// });
-
 
 //add scrollspy behavior to the navbar
 $('body').scrollspy({ target: '#navbar-ex' });
@@ -19,13 +12,20 @@ class My_Portfolio_Scroll{
     _scroll(event){
         let top = this._el2.offsetTop;
         event.preventDefault();
-        //this._el2.scrollIntoView({behavior: "smooth", block: "start"});
+        this._el2.scrollIntoView({behavior: "smooth", block: "start"});
             window.scroll({
                 top: `${top}`,
                 behavior: "smooth",
             });
     }
 }
+
+//jQuery scroll
+// $("#buttonDown").click(function() {
+//     $('html, body').animate({
+//         scrollTop: $("#about").offset().top
+//     }, 1000);
+// });
 
 let portfolio1 = new My_Portfolio_Scroll({
     el1: document.querySelector('#buttonDown'),
@@ -65,9 +65,9 @@ let navbarCollapse =() => {
     if (window.scrollY > 50) {
         //console.log(window.scrollY);
         navbar.classList.add("navbar-shrink");
-        toggler.classList.remove("collapsed");
-        toggler.setAttribute('aria-expanded', 'true');
-        collapse.classList.add("show");
+        // toggler.classList.remove("collapsed");
+        // toggler.setAttribute('aria-expanded', 'true');
+        // collapse.classList.add("show");
 
     } else {
         navbar.classList.remove("navbar-shrink");
@@ -78,6 +78,8 @@ let navbarCollapse =() => {
     }
 };
 window.addEventListener('scroll', navbarCollapse);
+
+
 
 
 //jQuery approach

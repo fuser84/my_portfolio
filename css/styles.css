@@ -1,4 +1,4 @@
-body{
+body {
     position: relative;
 }
 
@@ -26,12 +26,12 @@ h5, address, .copyright {
 
 .parallax1 {
     background-image: url("/img/forest.jpeg");
-    height:100vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
     color: white;
     text-align: center;
@@ -40,11 +40,11 @@ h5, address, .copyright {
 
 .parallax2 {
     background-image: url("/img/grey2.jpg");
-    height:80vh;
-    width:100vw;
+    height: 80vh;
+    width: 100vw;
     /* Create the parallax scrolling effect */
     /*scroll to fixed - to add parallax*/
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,8 +53,8 @@ h5, address, .copyright {
 
 .parallax3 {
     background-image: url("/img/laptop2.jpg");
-    height:90vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -68,8 +68,8 @@ h5, address, .copyright {
 
 .parallax4 {
     background-image: url("/img/waterfall.jpg");
-    height:90vh;
-    width:100vw;
+    height: 90vh;
+    width: 100vw;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -80,15 +80,16 @@ h5, address, .copyright {
     border: grey;
 
 }
+
 .btn-circle {
     font-size: 26px;
     width: 55px;
     height: 55px;
     margin-top: 15px;
     line-height: 45px;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
+    /*-webkit-transition: background 0.3s ease-in-out;*/
+    /*-moz-transition: background 0.3s ease-in-out;*/
+    /*transition: background 0.3s ease-in-out;*/
     color: white;
     border: 2px solid white;
     border-radius: 100% !important;
@@ -111,7 +112,7 @@ h5, address, .copyright {
 }
 
 .nav-pills > li > a.active {
-    background-color: #838080!important;
+    background-color: #838080 !important;
 }
 
 .navbar-shrink {
@@ -120,4 +121,35 @@ h5, address, .copyright {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background: black;
 }
+
+.navbar-brand {
+    font-family: 'Frijole', cursive;
+}
+
+.navbar-brand:hover {
+    background-color: #737482;
+    color: white;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: #737482;
+    color: white;
+}
+
+#main, #about, #portfolio, #contact, h1, h2, h3 + p {
+    font-family: 'Miltonian Tattoo', cursive;
+    font-size: 150%;
+}
+
+img {
+    transition: all .2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+
+
 
