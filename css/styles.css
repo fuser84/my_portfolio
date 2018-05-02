@@ -20,12 +20,14 @@ body {
     padding: 20px 0px 20px 0px;
 }
 
-h5, address, .copyright {
+h5,
+address,
+.copyright {
     color: white;
 }
 
 .parallax1 {
-    background-image: url("/img/forest.jpeg");
+    /* background-image: url("/img/forest.jpeg"); */
     height: 100vh;
     width: 100vw;
     /* Create the parallax scrolling effect */
@@ -35,11 +37,14 @@ h5, address, .copyright {
     background-size: cover;
     color: white;
     text-align: center;
+}
 
+.parallax1Img {
+    background-image: url("/img/forest.jpeg");
 }
 
 .parallax2 {
-    background-image: url("/img/grey2.jpg");
+    /* background-image: url("/img/grey2.jpg"); */
     height: 80vh;
     width: 100vw;
     /* Create the parallax scrolling effect */
@@ -51,11 +56,14 @@ h5, address, .copyright {
     color: white;
 }
 
+.parallax2Img {
+    background-image: url("/img/grey2.jpg");
+}
+
 .parallax3 {
-    background-image: url("/img/black_chart.jpg");
+    /* background-image: url("/img/black_chart.jpg"); */
     height: 100vh;
     width: 100vw;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -63,14 +71,16 @@ h5, address, .copyright {
     background-size: cover;
     color: white;
     border: grey;
+}
 
+.parallax3Img{
+    background-image: url("/img/black_chart.jpg");
 }
 
 .parallax4 {
-    background-image: url("/img/waterfall.jpg");
+    /* background-image: url("/img/waterfall.jpg"); */
     height: 30vh;
     width: 100vw;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -78,7 +88,6 @@ h5, address, .copyright {
     background-size: cover;
     color: white;
     border: grey;
-
 }
 
 .btn-circle {
@@ -111,7 +120,7 @@ h5, address, .copyright {
     background: black;
 }
 
-.nav-pills > li > a.active {
+.nav-pills>li>a.active {
     background-color: #838080 !important;
 }
 
@@ -137,7 +146,13 @@ h5, address, .copyright {
     color: white;
 }
 
-#main, #about, #portfolio, #contact, h1, h2, h3 + p {
+#main,
+#about,
+#portfolio,
+#contact,
+h1,
+h2,
+h3+p {
     font-family: 'Miltonian Tattoo', cursive;
     font-size: 150%;
 }
@@ -154,6 +169,11 @@ img:hover {
     color: white;
 }
 
-.btn-outline-success{
+.btn-outline-success {}
 
+.jumbotron {
+    /* height: 100vh; */
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
 }
