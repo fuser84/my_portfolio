@@ -52,7 +52,7 @@ h5, address, .copyright {
 }
 
 .parallax3 {
-    background-image: url("/img/laptop2.jpg");
+    background-image: url("/img/black_chart.jpg");
     height: 100vh;
     width: 100vw;
 
@@ -68,7 +68,7 @@ h5, address, .copyright {
 
 .parallax4 {
     background-image: url("/img/waterfall.jpg");
-    height: 90vh;
+    height: 30vh;
     width: 100vw;
 
     /* Create the parallax scrolling effect */
@@ -150,6 +150,10 @@ img:hover {
     transform: scale(1.2);
 }
 
+.card-footer {
+    color: white;
+}
 
+.btn-outline-success{
 
-
+}

@@ -65,10 +65,6 @@ let navbarCollapse =() => {
     if (window.scrollY > 50) {
         //console.log(window.scrollY);
         navbar.classList.add("navbar-shrink");
-        // toggler.classList.remove("collapsed");
-        // toggler.setAttribute('aria-expanded', 'true');
-        // collapse.classList.add("show");
-
     } else {
         navbar.classList.remove("navbar-shrink");
         toggler.classList.add("collapsed");
