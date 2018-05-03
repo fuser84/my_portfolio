@@ -12,7 +12,7 @@ class My_Portfolio_Scroll{
     _scroll(event){
         let top = this._el2.offsetTop;
         event.preventDefault();
-        this._el2.scrollIntoView({behavior: "smooth", block: "start"});
+        // this._el2.scrollIntoView({behavior: "smooth", block: "start"});
             window.scroll({
                 top: `${top}`,
                 behavior: "smooth",
@@ -20,7 +20,7 @@ class My_Portfolio_Scroll{
     }
 }
 
-//jQuery scroll
+// jQuery scroll
 // $("#buttonDown").click(function() {
 //     $('html, body').animate({
 //         scrollTop: $("#about").offset().top
