@@ -57,24 +57,24 @@ address,
 }
 
 .parallax2Img {
-    background-image: url("/img/grey2.jpg");
+    background-image: url("/img/keyboard2.jpg");
 }
 
-.parallax3 {
+/*.parallax3 {*/
     /* background-image: url("/img/black_chart.jpg"); */
-    height: 100vh;
-    width: 100vw;
+    /*height: 100vh;*/
+    /*width: 100vw;*/
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    border: grey;
-}
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*color: white;*/
+    /*border: grey;*/
+/*}*/
 
 .parallax3Img{
-    background-image: url("/img/black_chart.jpg");
+    background-image: url("/img/black_chart.jpg") ;
 }
 
 .parallax4 {
@@ -88,6 +88,7 @@ address,
     background-size: cover;
     color: white;
     border: grey;
+    background-color: black;
 }
 
 .btn-circle {
