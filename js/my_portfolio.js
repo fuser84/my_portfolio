@@ -57,6 +57,26 @@ let portfolio6 = new My_Portfolio_Scroll({
     el2: document.querySelector('#name')
 });
 
+let portfolio7 = new My_Portfolio_Scroll({
+    el1: document.querySelector('#bottom_home'),
+    el2: document.querySelector('#navbar-ex')
+});
+
+let portfolio8 = new My_Portfolio_Scroll({
+    el1: document.querySelector('#bottom_about'),
+    el2: document.querySelector('#about')
+});
+
+let portfolio9 = new My_Portfolio_Scroll({
+    el1: document.querySelector('#bottom_portfolio'),
+    el2: document.querySelector('#portfolio')
+});
+
+let portfolio10 = new My_Portfolio_Scroll({
+    el1: document.querySelector('#bottom_contact'),
+    el2: document.querySelector('#contact')
+});
+
 //ES6 approach
 let navbarCollapse =() => {
     let navbar = document.querySelector('#navbar-ex');
@@ -75,6 +95,7 @@ let navbarCollapse =() => {
 };
 window.addEventListener('scroll', navbarCollapse);
 
+//google-maps
 function initMap() {
     let Kiev = {lat: 50.45466, lng: 30.5238};
     let map = new google.maps.Map(document.getElementById('map'), {
