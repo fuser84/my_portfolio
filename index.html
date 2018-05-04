@@ -10,8 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
     <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
@@ -26,218 +27,219 @@
     <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script defer src="js/my_portfolio.js"></script>
-    <!--<script defer src="js/scripts.js"></script>-->
-    <!-- endbuild -->
+    <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mei6n1rvnxSM2d-svYL4mWvO9Pb0JwI&callback=initMap">
+    </script>
+
 </head>
 
 <body>
-    <nav id="navbar-ex" class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" id="name" href="#">
+<nav id="navbar-ex" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" id="name" href="#">
                 <span style="color:white">
                     <i class="fas fa-male"></i> Volodymyr Novodid</span>
-            </a>
-            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">-->
-            <!--<span class="navbar-toggler-icon"></span>-->
-            <!--</button>-->
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        </a>
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">-->
+        <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span style="color:white">
                     Menu
                     <i class="fa fa-bars"></i>
                 </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class=" nav nav-pills ml-auto row">
-                    <li class="nav-item">
-                        <a class="nav-link" id="about_me" href="#about">
-                            <i class="fab fa-grav fa-2x"></i>About</a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class=" nav nav-pills ml-auto row">
+                <li class="nav-item">
+                    <a class="nav-link" id="about_me" href="#about">
+                        <i class="fab fa-grav fa-2x"></i>About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="my_portfolio" href="#portfolio">
+                        <i class="far fa-file-code fa-2x"></i>Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="my_contact" href="#contact">
+                        <i class="far fa-handshake fa-2x"></i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<header>
+    <!-- <div class="container-fluid"> -->
+    <div id="main" class="jumbotron  jumbotron-fluid parallax1 parallax1Img">
+        <!-- <img src="/img/forest.jpeg" class="image-fluid"> -->
+        <div class="container-fluid">
+            <div class="col-12 col-sm-12 align-self-center">
+                <h1>Fuser Web Craft</h1>
+                <p>You decide - we create Modern Web Applications!</p>
+                <a href="#" id="buttonDown" class="btn btn-circle">
+                    <i class="fas fa-angle-double-down"></i>
+                </a>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- <div class="row"> -->
+
+    </div>
+    <!-- </div> -->
+</header>
+
+
+<!-- <div class="container-fluid"> -->
+<div id="about" class="jumbotron jumbotron-fluid parallax2 parallax2Img">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 align-self-center">
+                <h3>My photo</h3>
+            </div>
+            <div class="col-sm align-self-center">
+                <h2>About Web Craft</h2>
+                <p>Web Craft is the way I see the web development.
+                    <br> As a passionate striver and self-taught web-developer in the sphere of modern web-languages I
+                    do
+                    my best in order to show what can be done to satisfy the common user</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->
+
+
+<div id="portfolio" class="jumbotron jumbotron-fluid parallax3 parallax3Img">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-md-3 align-self-center">
+                <h3>Portfolio List</h3>
+            </div>
+            <div class="col-sm col-md align-self-center">
+                <h2>Present Projects</h2>
+                <p>Please familiar with my current works - Angular 4+ project and so on...</p>
+
+                <div class="col row">
+                    <div class="col col-sm-4">
+                        <a href="https://angulartickets.000webhostapp.com/" target="_blank">
+                            <img style="width: 30vh; height: 30vh;" src="img/thumbnail_wacken.png"
+                                 class="img-thumbnail mx-auto rounded border border-primary"
+                                 alt="Travel Bug Injection">
+                        </a>
+                    </div>
+                    <div class="col col-sm-4">
+                        <a href="#" onclick="return false;">
+                            <img style="width: 30vh; height: 30vh;" src="img/coming_soon.png"
+                                 class="img-thumbnail mx-auto rounded border border-primary"
+                                 alt="coming soon">
+                        </a>
+                    </div>
+                    <div class="col col-sm-4">
+                        <a href="#" onclick="return false;">
+                            <img style="width: 30vh; height: 30vh;" src="img/coming_soon.png"
+                                 class="img-thumbnail mx-auto rounded border border-primary"
+                                 alt="coming soon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->
+
+<div class="container-fluid">
+    <div id="contact" class="row row-content parallax4">
+        <div class="col-12 col-12 text-center align-self-center">
+            <h3>Contacts</h3>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://github.com/fuserMRX" class="btn btn-outline-info" id="github"
+                       target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                        <span class="network-name">Github</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://plus.google.com/u/0/+VolodymyrNovodid" id="google"
+                       class="btn btn-outline-info" target="_blank">
+                        <i class="fab fa-google fa-2x"></i>
+                        <span class="network-name">Google+</span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/volodymyr-novodid-ba5826162/"
+                       class="btn btn-outline-info" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                        <span class="network-name">Linkedin</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="map" style="width:100vw;height:40vh;"></div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 offset-2 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="my_portfolio" href="#portfolio">
-                            <i class="far fa-file-code fa-2x"></i>Portfolio</a>
+                    <li>
+                        <a href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="my_contact" href="#contact">
-                            <i class="far fa-handshake fa-2x"></i>Contact</a>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+            <div class="col-6 col-sm-3 align-self-center  text-right">
 
-
-    <header>
-        <!-- <div class="container-fluid"> -->
-        <div id="main" class="jumbotron  jumbotron-fluid parallax1 parallax1Img">
-            <!-- <img src="/img/forest.jpeg" class="image-fluid"> -->
-            <div class="container-fluid">
-                <div class="col-12 col-sm-12 align-self-center">
-                    <h1>Fuser Web Craft</h1>
-                    <p>You decide - we create Modern Web Applications!</p>
-                    <a href="#" id="buttonDown" class="btn btn-circle">
-                        <i class="fas fa-angle-double-down"></i>
+            </div>
+            <div class="col col-sm-4 align-self-center">
+                <div style="text-align: center;">
+                    <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/u/0/+VolodymyrNovodid"
+                       target="_blank">
+                        <i class="fab fa-google-plus fa-2x"></i>
                     </a>
-                    <!-- </div> -->
-                </div>
-            </div>
-            <!-- <div class="row"> -->
-
-        </div>
-        <!-- </div> -->
-    </header>
-
-
-    <!-- <div class="container-fluid"> -->
-    <div id="about" class="jumbotron jumbotron-fluid parallax2 parallax2Img">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 align-self-center">
-                    <h3>My photo</h3>
-                </div>
-                <div class="col-sm align-self-center">
-                    <h2>About Web Craft</h2>
-                    <p>Web Craft is the way I see the web development.
-                        <br> As a passionate striver and self-taught web-developer in the sphere of modern web-languages I do
-                        my best in order to show what can be done to satisfy the common user</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- </div> -->
-
-
-    <div id="portfolio" class="jumbotron jumbotron-fluid parallax3 parallax3Img">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4 col-md-3 align-self-center">
-                    <h3>Portfolio List</h3>
-                </div>
-                <div class="col-sm col-md align-self-center">
-                    <h2>Present Projects</h2>
-                    <p>Please familiar with my current works - Angular 4+ project and so on...</p>
-
-                    <div class="col row">
-                        <div class="col col-sm-4">
-                            <a href="https://angulartickets.000webhostapp.com/" target="_blank">
-                                <img style="width: 30vh; height: 30vh;" src="img/thumbnail_wacken.png" class="img-thumbnail mx-auto rounded border border-primary"
-                                    alt="Travel Bug Injection">
-                            </a>
-                        </div>
-                        <div class="col col-sm-4">
-                            <a href="#" onclick="return false;">
-                                <img style="width: 30vh; height: 30vh;" src="img/coming_soon.png" class="img-thumbnail mx-auto rounded border border-primary"
-                                    alt="coming soon">
-                            </a>
-                        </div>
-                        <div class="col col-sm-4">
-                            <a href="#" onclick="return false;">
-                                <img style="width: 30vh; height: 30vh;" src="img/coming_soon.png" class="img-thumbnail mx-auto rounded border border-primary"
-                                    alt="coming soon">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- </div> -->
-
-    <div class="container-fluid">
-        <div id="contact" class="row row-content parallax4">
-            <!--<div class="container">-->
-            <div class="col-sm-4 col-md-3 align-self-center">
-                <h3>Contacts</h3>
-            </div>
-            <div class="col-sm col-md align-self-center">
-                <div class="row">
-                    <div class="col-lg-8 text-center">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="https://github.com/fuserMRX" class="btn btn-outline-info" id="github" target="_blank">
-                                    <i class="fab fa-github fa-2x"></i>
-                                    <span class="network-name">Github</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://plus.google.com/u/0/+VolodymyrNovodid" id="google" class="btn btn-outline-info" target="_blank">
-                                    <i class="fab fa-google fa-2x"></i>
-                                    <span class="network-name">Google+</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/volodymyr-novodid-ba5826162/" class="btn btn-outline-info" target="_blank">
-                                    <i class="fab fa-linkedin fa-2x"></i>
-                                    <span class="network-name">Linkedin</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="container-fluid">
-        <div id="map" style="width:100vw;height:30vh;"></div>
-    </div>
-
-
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-5 offset-2 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-3 align-self-center  text-right">
-
-                </div>
-                <div class="col col-sm-4 align-self-center">
-                    <div style="text-align: center;">
-                        <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/u/0/+VolodymyrNovodid" target="_blank">
-                            <i class="fab fa-google-plus fa-2x"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/volodymyr-novodid-ba5826162/" target="_blank">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                        <a class="btn btn-social-icon btn-github" href="https://github.com/fuserMRX" target="_blank">
-                            <i class="fab fa-github fa-2x"></i>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row copyright justify-content-center">
-                <div class="col-auto">
-                    <a href="#" id="buttonUp" class="btn btn-circle-black">
-                        <i class="fa fa-angle-double-up"></i>
+                    <a class="btn btn-social-icon btn-linkedin"
+                       href="https://www.linkedin.com/in/volodymyr-novodid-ba5826162/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i>
                     </a>
-                </div>
-            </div>
-            <div class="row copyright justify-content-center">
-                <div class="col-auto">
-                    <p>© Copyright 2018 Fuser Web Craft</p>
+                    <a class="btn btn-social-icon btn-github" href="https://github.com/fuserMRX" target="_blank">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="row copyright justify-content-center">
+            <div class="col-auto">
+                <a href="#" id="buttonUp" class="btn btn-circle-black">
+                    <i class="fa fa-angle-double-up"></i>
+                </a>
+            </div>
+        </div>
+        <div class="row copyright justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2018 Fuser Web Craft</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 
