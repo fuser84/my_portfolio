@@ -39,7 +39,6 @@ address,
     text-align: center;
 }
 
-
 .parallax1Img {
     background-image: url("/img/forest.jpeg");
 }
@@ -69,11 +68,10 @@ address,
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    
 }
 
-.parallax3Img{
-    background-image: url("/img/binary.jpg") ;
+.parallax3Img {
+    background-image: url("/img/binary.jpg");
 }
 
 .parallax4 {
@@ -166,12 +164,12 @@ img:hover {
     color: white;
 }
 
-#github:hover{
+#github:hover {
     background-color: white;
     color: black;
 }
 
-#google:hover{
+#google:hover {
     background-color: red;
 }
 
@@ -182,3 +180,10 @@ img:hover {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
