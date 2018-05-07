@@ -188,7 +188,7 @@ function initMap() {
     });
 }
 
-//window.addEventListener('load', initMap);
+window.addEventListener('load', initMap);
 
 
 

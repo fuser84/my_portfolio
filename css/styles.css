@@ -27,13 +27,10 @@ address,
 }
 
 .parallax1 {
-    /* background-image: url("/img/forest.jpeg"); */
     height: 100vh;
     width: 100vw;
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    /*background-repeat: no-repeat;*/
     background-size: cover;
     color: white;
     text-align: center;
@@ -44,20 +41,18 @@ address,
 }
 
 .parallax2 {
-    /* background-image: url("/img/grey2.jpg"); */
-    height: 70vh;
+    height: 85vh;
     width: 100vw;
-    /* Create the parallax scrolling effect */
-    /*scroll to fixed - to add parallax*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: #000000;
+    text-shadow:0 0 10px darkcyan;
 }
 
 .parallax2Img {
-    background-image: url("/img/grey2.jpg");
+    background-image: url("/img/ancient-architecture.jpg");
 }
 
 .parallax3 {
@@ -91,9 +86,6 @@ address,
     height: 55px;
     margin-top: 15px;
     line-height: 45px;
-    /*-webkit-transition: background 0.3s ease-in-out;*/
-    /*-moz-transition: background 0.3s ease-in-out;*/
-    /*transition: background 0.3s ease-in-out;*/
     color: white;
     border: 2px solid white;
     border-radius: 100% !important;
@@ -174,7 +166,6 @@ img:hover {
 }
 
 .jumbotron {
-    /* height: 100vh; */
     margin-bottom: 0;
     display: flex;
     align-items: center;

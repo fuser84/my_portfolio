@@ -10,9 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-          crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"-->
+          <!--integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"-->
+          <!--crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
     <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
@@ -22,6 +22,7 @@
     <!--jQuery first, then Tether, then Bootsrap JS.-->
     <!-- build:js js/main.js -->
     <!--defer to load script async in the listed order-->
+    <script defer src="js/fontawesome-all.min.js"></script>
     <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
     <script defer src="node_modules/tether/dist/js/tether.min.js"></script>
     <script defer src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -38,11 +39,8 @@
     <div class="container">
         <a class="navbar-brand" id="name" href="#">
                 <span style="color:white">
-                    <i class="fas fa-male"></i> Volodymyr Novodid</span>
+                    <i class="fab fa-jedi-order  fa-2x"></i> Volodymyr Novodid</span>
         </a>
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">-->
-        <!--<span class="navbar-toggler-icon"></span>-->
-        <!--</button>-->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,9 +70,7 @@
 
 
 <header>
-    <!-- <div class="container-fluid"> -->
     <div id="main" class="jumbotron  jumbotron-fluid parallax1 parallax1Img">
-        <!-- <img src="/img/forest.jpeg" class="image-fluid"> -->
         <div class="container-fluid">
             <div class="col-12 col-sm-12 align-self-center">
                 <h1>Fuser Web Craft</h1>
@@ -82,34 +78,28 @@
                 <a href="#" id="buttonDown" class="btn btn-circle">
                     <i class="fas fa-angle-double-down"></i>
                 </a>
-                <!-- </div> -->
             </div>
         </div>
-        <!-- <div class="row"> -->
-
     </div>
-    <!-- </div> -->
 </header>
 
 
-<!-- <div class="container-fluid"> -->
 <div id="about" class="jumbotron jumbotron-fluid parallax2 parallax2Img">
     <div class="container">
         <div class="row">
-            <div class="col-sm-3 align-self-center">
-                <h3>My photo</h3>
+            <div class="col-5 col-sm-3 align-self-center">
+                <img src="img/linkedin_photo.png" alt="my_photo" class="img-thumbnail img-fluid rounded">
             </div>
-            <div class="col-sm align-self-center">
+            <div class="col-7 col-sm align-self-center">
                 <h2>About Web Craft</h2>
                 <p>Web Craft is the way I see the web development.
-                    <br> As a passionate striver and self-taught web-developer in the sphere of modern web-languages I
-                    do
-                    my best in order to show what can be done to satisfy the common user</p>
+                    <br> As a passionate striver in the sphere of modern web-languages I
+                    do my best in order to show what can be done in order to satisfy the common user</p>
             </div>
         </div>
     </div>
 </div>
-<!-- </div> -->
+
 
 
 <div id="portfolio" class="jumbotron jumbotron-fluid parallax3 parallax3Img">
@@ -149,7 +139,7 @@
         </div>
     </div>
 </div>
-<!-- </div> -->
+
 
 <div class="container-fluid">
     <div id="contact" class="row row-content parallax4">
@@ -196,7 +186,7 @@
                         <a id="bottom_home" href="#"><i class="fas fa-home fa-2x"></i> Home</a>
                     </li>
                     <li>
-                        <a id="bottom_about" href="#"><i class="fab fa-grav fa-2x"></i> About</a>
+                        <a id="bottom_about" href="#"><i class="fab fa-grav fa-2x fa-pulse"></i> About</a>
                     </li>
                     <li>
                         <a id="bottom_portfolio" href="#"><i class="far fa-file-code fa-2x"></i> Portfolio</a>
@@ -206,9 +196,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- <div class="col-6 col-sm-3 align-self-center  text-right">
 
-            </div> -->
             <div class="col col-sm-4 mx-auto align-self-center">
                 <div style="text-align: center;">
                     <a class="btn btn-social-icon btn-google-plus" href="https://plus.google.com/u/0/+VolodymyrNovodid"
